@@ -1,0 +1,145 @@
+.contentbox{
+    border: 2px solid black;
+   width: 90%;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding-right: 15px;
+   background-color: rgb(189, 223, 254);
+   border-radius: 20px;
+   box-shadow: 5px 5px 10px grey;
+   border: none;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: black;
+}
+.leftside{
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.rightside{
+    height: 100%;
+    width: 70%;
+    font-weight: bolder;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding:  0 10px 0 0 px;
+    color: blue;
+
+}
+.info{
+    margin: 15px;
+    text-align: center;
+}
+.address{
+    font-weight: bolder;
+    font-size: 24px;
+   
+}
+.address i{
+    font-size: 30px;
+    color: blue;
+}
+.addline{
+    font-weight: 100;
+    font-size: 16px;
+    
+}
+.phone{
+    font-weight: bolder;
+    font-size: 24px;
+   
+}
+.phone i{
+    font-size: 30px;
+    color: blue;
+}
+.phnline{
+    font-weight: 100;
+    font-size: 16px;
+    
+}
+.email{
+    font-weight: bolder;
+    font-size: 24px;
+    
+}
+.emailline{
+    font-weight: 100;
+    font-size: 16px;
+    
+}
+.email i{
+    font-size: 30px;
+    color: blue;
+}
+.lines{
+    font-weight: 100;
+    font-size: 20px;
+    margin: 5px 0;
+    color: black;
+}
+.name input{
+    height: 30px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(76, 88, 255);
+    background-color: transparent;    
+}
+.number input{
+    height: 30px;
+    width: 100%;
+    margin: 5px 0;
+    padding: 0 5px;
+    border-radius: 5px;
+    border:1px solid rgb(76, 88, 255);
+    background-color: transparent;
+    
+    
+}
+ textarea{
+    height: 100px;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px 0px;
+    padding: 0 5px;
+    border-radius: 5px;
+    border: 1px solid rgb(76, 88, 255);
+    background-color: transparent;
+    resize: none;
+}
+.submit{
+    display: flex;
+    justify-content: center;
+   
+}
+.submit input[type=submit]{
+    font-size: 16px;
+    padding: 8px 16px ;
+    border-radius: 5px;
+    border: none;
+    background-color: blue;
+    color: white;
+}
+@media (max-width:643px) {
+    .contentbox{
+        flex-direction: column-reverse;
+    }
+    .leftside{
+        flex-direction: row-reverse;
+    }
+}
+
