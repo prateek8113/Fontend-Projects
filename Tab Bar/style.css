@@ -1,0 +1,81 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #272838;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.items{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+}
+.box{
+padding: 40px;
+color: white;
+background-color:#347FC4 ;
+width: 900px;
+border-radius: 20px;
+box-shadow: 0 5px 10px grey ;
+}
+.title{
+    font-size: 40px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+}
+.items label{
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 500;
+    width: 20%;
+    color: black;
+    border-radius: 12px;
+    line-height: 55px;
+    text-align: center;
+    margin: 5px;
+    z-index: +1;
+}
+.indicator{
+position: absolute;
+top: 5px;
+left: 0;
+height: 50px;
+width: 20%;
+background-color: #989FCE;
+margin-left: 5px;
+margin-top: 5px;
+border-radius: 12px;
+transition: ease-in;
+
+}
+#home:checked ~ .indicator{
+    top: 5px;
+    left: 0px;
+}
+#blog:checked ~  .items .indicator{
+    top: 70px;
+    left: 0px;
+}
+#help:checked ~ .items .indicator{
+    top: 135px;
+    left: 0px;
+}
+#code:checked ~ .items .indicator{
+    top: 200px;
+    left: 0px;
+}
+#about:checked ~ .items .indicator{
+    top: 265px;
+    left: 0px;
+}
+input{
+    display: none;
+}
