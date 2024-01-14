@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: aquamarine;
+}
+.wrapper{
+    position: relative;
+    height: 400px;
+    width: 300px;
+   transform-style:preserve-3d;
+   perspective: 1000px;
+}
+
+.card{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 10px;
+    background-color: white;
+    transform: rotateY(0deg);
+    transition: 1s cubic-bezier(0.4,0.2,0.2,1);
+    backface-visibility: hidden;
+}
+.wrapper:hover > .front
+{
+    transform: rotateY(-180deg);
+    
+}
+
+.front img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.back{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 10px;
+   transform: rotateY(180deg);
+   
+   
+   .title{
+    text-align: center;
+    margin-bottom: 10px;
+    font-size:35px;
+    font-weight: 600;
+    }
+    .value{
+        text-align: center;
+        margin-bottom: 40px;
+        font-size: 16px;
+        
+    }
+    .logo{
+        display: flex;
+        justify-content: space-evenly;
+    
+        text-align: center;
+        font-size: 32px;
+    }
+
+
+}
+.wrapper:hover > .back
+{
+    transform: rotateY( 0deg);
+    
+}
+.back img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+.logo a{
+   display: flex;
+   text-decoration: none;
+   justify-content: center;
+   align-items: center;
+    color: black;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: aquamarine;
+    
+}
